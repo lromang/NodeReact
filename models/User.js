@@ -6,8 +6,5 @@ const userSchema = new Schema ({
     googleId: String
 });
 
-const Users = mongoose.model('users', userSchema);
+mongoose.model('users', userSchema);
 
-module.exports = {
-    Users
-};
